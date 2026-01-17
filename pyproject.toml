@@ -1,0 +1,30 @@
+[project]
+name = "boot-dev-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai==1.12.1",
+    "python-dotenv==1.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.36.2",
+    "black>=25.12.0",
+    "debugpy>=1.8.19",
+    "ruff>=0.14.10",
+]
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = ["I"]  # import sorting
+
+[tool.basedpyright]
+typeCheckingMode = "standard"  # or "strict"
+venvPath = ".venv"
