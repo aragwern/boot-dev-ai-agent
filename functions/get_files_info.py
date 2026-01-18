@@ -25,18 +25,3 @@ def get_files_info(working_directory, directory="."):
 
     files_info = "\n".join(info)
     return files_info
-
-
-# - README.md: file_size=1032 bytes, is_dir=False
-# - src: file_size=128 bytes, is_dir=True
-# - package.json: file_size=1234 bytes, is_dir=False
-
-# os.path.abspath(): Get an absolute path from a relative path
-# os.path.join(): Join two paths together safely (handles slashes)
-# os.path.normpath(): Normalize a path (handles things like ..)
-# os.path.commonpath(): Get the common sub-path shared by multiple paths
-# os.listdir(): List the contents of a directory
-# os.path.isdir(): Check if a path points to an existing directory
-# os.path.isfile(): Check if a path points to an existing regular file
-# os.path.getsize(): Get the size of a file (in bytes)
-# .join(): Join a list of strings together with a given separator
